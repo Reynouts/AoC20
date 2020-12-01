@@ -36,4 +36,4 @@ to Mario.
 The other solution was to create a set of the numbers. Then iterate 
 through the numbers and check if "2020-number" is in the set. Using a
 set makes it cheap to get the element, which results in O(n) as time
-complexity for part 1. Credits to [Chris][https://github.com/Chriskamphuis/aoc2020].
+complexity for part 1. Credits to [Chris](https://github.com/Chriskamphuis/aoc2020).
