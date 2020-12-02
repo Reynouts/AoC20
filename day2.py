@@ -12,11 +12,7 @@ def main():
         letter = letter[:-1]
 
         # part 1
-        freq = 0
-        for l in password:
-            if l == letter:
-                freq += 1
-        if bounds[0] <= freq <= bounds[1]:
+        if bounds[0] <= password.count(letter) <= bounds[1]:
             p1 += 1
 
         # part 2
