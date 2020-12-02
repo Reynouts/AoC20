@@ -37,3 +37,21 @@ The other solution was to create a set of the numbers. Then iterate
 through the numbers and check if "2020-number" is in the set. Using a
 set makes it cheap to get the element, which results in O(n) as time
 complexity for part 1. Credits to [Chris](https://github.com/Chriskamphuis/aoc2020).
+
+## [--- Day 2: Password Philosophy ---](https://adventofcode.com/2020/day/2)
+Easy puzzle today again. I guess even less discussion about complexity
+than day 1. Input are a list of password, including a two numbers and a letter.
+
+P1: count frequency of a given letter in password and see if it falls within
+a given range (the two numbers)
+P2: Use the two numbers as indexes and check if exactly one of those places
+contain the given letter.
+
+I do both parts in one go. In a line by line loop I first parse the input 
+(I just used split() and map)) then check the frequency of the given letter
+in the password and if it is in the given range. Next I do the XOR (in Python
+you can use `^` or `!=`) check for the positions. 
+
+You could add try/catch stuff for the indexing of the passwords to be failsafe
+and you could bail out early when the frequency is hihger than the high limit
+of the range for some optimization, but that's about it I guess!
