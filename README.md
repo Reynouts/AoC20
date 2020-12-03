@@ -55,3 +55,21 @@ you can use `^` or `!=`) check for the positions.
 You could add try/catch stuff for the indexing of the passwords to be failsafe
 and you could bail out early when the frequency is hihger than the high limit
 of the range for some optimization, but that's about it I guess!
+
+## [--- Day 3: Toboggan Trajectory ---](https://adventofcode.com/2020/day/3)
+A typical AoC puzzle, which I really like. You get a sort of topdown map as
+input and need to map out a trajectory and see what is in the way of the
+trajectory. This time there are trees on a slope and you want to select the
+best route with your toboggan, based on the trees you can avoid on the slope.
+
+The map repeats itself in horizontal direction. You only have to store the
+object locations which you can hit or need to count (in this specific case,
+only the trees) and the toboggan just moves linear according to some given
+slope. This makes it easy to check which trees the toboggan hits in its 
+trajectory on the slope.
+
+No problems solving this one, but I liked it. And every year I try to make
+some fun visualisations in the basic commandprompt/terminal. So this was a
+nice opportunity to create one!
+
+![giffie](day3_up.gif)
