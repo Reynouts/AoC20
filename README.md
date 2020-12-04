@@ -73,3 +73,17 @@ some fun visualisations in the basic commandprompt/terminal. So this was a
 nice opportunity to create one!
 
 ![giffie](day3_up.gif)
+
+## [--- Day 4: Passport Processing ---](https://adventofcode.com/2020/day/4)
+Today a bit more elbow grease: validation of passport fields. This could for
+a part done with regexes, but I could not manage to put it all in a regex.
+I used a dictionary with the passport fields as keys and as values function
+pointers or lambda functions if they were short.
+
+I did found out that python dictionaries are ordered since python 3.7 and 
+that I found the wallrus operator useful (but it's only from 3.8!).
+
+In the meantime I check out some old 2015/2016 puzzles. I participated and
+completed 2017/2018/2019, so I want to have those stars ;)
+
+Let's head into the weekend!

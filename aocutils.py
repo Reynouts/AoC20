@@ -9,7 +9,7 @@ def get_input(day, token="\n"):
 
 def get_file(day, token="\n"):
     with open('day{}.txt'.format(day), 'r') as f:
-        return f.readlines()
+        return f.read().split(token)
 
 def write_input(day):
     with open('day{}.txt'.format(day), 'w') as f:
