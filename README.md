@@ -87,3 +87,34 @@ In the meantime I check out some old 2015/2016 puzzles. I participated and
 completed 2017/2018/2019, so I want to have those stars ;)
 
 Let's head into the weekend!
+
+## [--- Day 5: Binary Boarding ---](https://adventofcode.com/2020/day/5)
+I expected a bigger puzzle in the weekend, but this one was still easy
+to manage. This puzzle contained some cryptic boardingpasses, from which
+you could infer the seatnumber by using binary space partitioning. I just
+implemented what has been asked and it worked fine.
+
+Apparantly you could have cut some corners by inferring it had something
+to do with binary and you could make the translation directly. I wouldn't
+come up with that, so I'm happy with my own solution. It was quick and clear
+for myself what needed to be done, but I should look into that binary stuff.
+
+For part 2 you should look in the list of seatnumbers, which one was missing.
+First you can sort this and then look of the numbers are all (previous + 1).
+Not a big deal!
+
+## [--- Day 6: Custom Customs ---](https://adventofcode.com/2020/day/6)
+Sunday, again expecting a bigger puzzle. Today in the plane, all groups of
+people needed to answer a questionnaire and you need to find out which 
+groups all answered "yes" to the same question. No optimazation needed and
+just some straight forward looping through these records did the job.
+
+This first week has been nice. Small puzzles that didn't take too much
+time and some days resulted in good discussions about the solutions.
+
+Everyone's still on board!
+
+Because I like making some simple visualisations in the terminal/command
+prompt, I have the idea to experiment with the python module *curses*,
+which gives you an interface to draw directly on the terminal, without
+difficult alignment and refreshing problems. Should be fun!
