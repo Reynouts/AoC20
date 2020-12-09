@@ -118,3 +118,29 @@ Because I like making some simple visualisations in the terminal/command
 prompt, I have the idea to experiment with the python module *curses*,
 which gives you an interface to draw directly on the terminal, without
 difficult alignment and refreshing problems. Should be fun!
+
+## [--- Day 7: Handy Haversacks ---](https://adventofcode.com/2020/day/7)
+To carry your luggage you need to apply to the luggage rules of aviation.
+Specific colored bags can contain specific other colored bags. What options
+do you have as "outerbag" for your shiny gold bag?
+
+So this kind of puzzle is typical for AoC. If you create a graph from the
+rules, you can apply some graph algorithms on this data.
+
+I went the recursive way and when it worked I didn't want to revisit it
+anymore. I just experimented some with regexes instead of splitting strings.
+Works fine for a lot of usecases, makes code maybe a bit shorter, but
+I still like the transparant way you can use string operations in Python
+to parse inputfiles.
+
+## [--- Day 8: Handheld Halting ---](https://adventofcode.com/2020/day/8)
+Oh, no. The handheld device (gameboy?) stopped working from the kid next
+to you in the plan. Of course it runs some intcode (flashbacks to last 
+year).
+
+So, is this our first step to a new intcomputer? Anyone who participated
+last year knows how important it was to make their intcomputer reusable
+and easy to expand. I think I'll revisit my code later today, to check
+if I can make it "better" and add some testcases or something. But it 
+would be fun if everyone spends time to make this intcomputer perfect,
+and this year we won't use it in later days ;-)
