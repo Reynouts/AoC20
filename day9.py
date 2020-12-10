@@ -27,8 +27,8 @@ def main():
                 counter -= 1
                 elems.append(data[counter])
             if sum(elems) == p1_value:
-                s = sorted(elems)
-                p2_value = s[0]+s[-1]
+                print(counter, i, p1_index)
+                p2_value = (min(elems)+max(elems))
                 break
     print("P2: {}".format(p2_value))
 
