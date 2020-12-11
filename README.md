@@ -144,3 +144,15 @@ and easy to expand. I think I'll revisit my code later today, to check
 if I can make it "better" and add some testcases or something. But it 
 would be fun if everyone spends time to make this intcomputer perfect,
 and this year we won't use it in later days ;-)
+
+day 9 
+Should use a sliding window. Just did some "smart" trick which is fast for
+my input, but won't work for all cases (so a bad solution!)
+
+day 10
+Used recursion with manual caching (memoization) and later refactored it
+with lru_cache for simplicity. Tribonacci sequence apparantly!
+
+day 11
+Game of Life simulation. Added some lookup/cache again to make it 10 times 
+faster as my initial solution was.
