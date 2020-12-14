@@ -1,7 +1,8 @@
 from itertools import product
+import re
 
 
-def create_mask(line, match="01"):
+def create_mask(line, match):
     mask = {}
     bitmask = line.split("=")[1].strip()
     for i, c in enumerate(bitmask):
@@ -26,40 +27,34 @@ def combi(b):
     return results
 
 
+def solve(data, mode):
+    pattern = ("10", "X1")
+    mask = []
+    memory = {}
+    for line in data:
+        if "mask" in line:
+            mask = create_mask(line, pattern[mode-1])
+        else:
+            nm = [int(s) for s in re.findall(r'\d+', line)]
+            binr = '{:036b}'.format(nm[mode-1])
+            nwm = ""
+            for i, c in enumerate(binr):
+                if i in mask:
+                    c = mask[i]
+                nwm += c
+            if mode == 1:
+                memory[nm[1]] = int(nwm, 2)
+            if mode == 2:
+                for c in combi(nwm):
+                    memory[int(c, 2)] = nm[0]
+    return sum([memory[x] for x in memory])
+
+
 def main():
     with open('day14.txt', 'r') as f:
         data = f.readlines()
-
-    patterns = ("10", "1X")
-    masks = []
-    memories = [{}, {}]
-    for line in data:
-        if "mask" in line:
-            masks = []
-            for i in patterns:
-                masks.append(create_mask(line, i))
-        else:
-            mem, number = line.split(" = ")
-            mem = int(mem.split("[")[1].split("]")[0])
-            number = int(number)
-            binr = ('{:036b}'.format(number), '{:036b}'.format(mem))
-            for n, mask in enumerate(masks):
-                nwm = ""
-                for i, c in enumerate(binr[n]):
-                    if i in mask:
-                        c = mask[i]
-                    nwm += c
-                #p1
-                if n == 0:
-                    memories[n][mem] = int(nwm, 2)
-                #p2
-                else:
-                    for c in combi(nwm):
-                        memories[n][int(c, 2)] = number
-
-    for i, memr in enumerate(memories):
-        print("P{}: {}".format(i+1,sum([memr[x] for x in memr])))
-
+    print("P1: {}".format(solve(data, 1)))
+    print("P2: {}".format(solve(data, 2)))
 
 
 if __name__ == "__main__":

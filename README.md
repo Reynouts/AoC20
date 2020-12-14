@@ -145,30 +145,30 @@ if I can make it "better" and add some testcases or something. But it
 would be fun if everyone spends time to make this intcomputer perfect,
 and this year we won't use it in later days ;-)
 
-day 9 
+## [--- Day 9: Encoding Error ---](https://adventofcode.com/2020/day/9)
 Should use a sliding window. Just did some "smart" trick which is fast for
 my input, but won't work for all cases (so a bad solution!)
 
-day 10
+## [--- Day 10: Adapter Array ---](https://adventofcode.com/2020/day/10)
 Used recursion with manual caching (memoization) and later refactored it
 with lru_cache for simplicity. Tribonacci sequence apparantly!
 
-day 11
+## [--- Day 11: Seating System ---](https://adventofcode.com/2020/day/11)
 Game of Life simulation. Added some lookup/cache again to make it 10 times 
 faster as my initial solution was.
 
-day 12
+## [--- Day 12: Rain Risk ---](https://adventofcode.com/2020/day/12)
 Nice simple day, to let the ship follow a waypoint. That allowed for a small
 mondriaan inspired visual!
 ![gif](day12vis.gif)
 
-day 13
+## [--- Day 13: Shuttle Search ---](https://adventofcode.com/2020/day/13)
 Toughest day so far. Didn't manage to bring enough math theory to solve this in 
 one go (something with CRT; Chinese Remainder Theorem). So I had to make my own
 solution, which took me very long. But after a stroll around the forest, I cam
 bacl, debugged my algorithm and finished it up, finally..!
 
-day 14
+## [--- Day 14: Docking Data ---](https://adventofcode.com/2020/day/14)
 Doing some stuff with bitmasks. Easy day, after struggle sunday. First I had both
 parts splitted. But I decided to refactor it to one loop. That resulted in a bigger
 mess, but I don't feel like reverting it anymore..
