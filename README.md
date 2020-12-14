@@ -156,3 +156,19 @@ with lru_cache for simplicity. Tribonacci sequence apparantly!
 day 11
 Game of Life simulation. Added some lookup/cache again to make it 10 times 
 faster as my initial solution was.
+
+day 12
+Nice simple day, to let the ship follow a waypoint. That allowed for a small
+mondriaan inspired visual!
+![gif](day12vis.gif)
+
+day 13
+Toughest day so far. Didn't manage to bring enough math theory to solve this in 
+one go (something with CRT; Chinese Remainder Theorem). So I had to make my own
+solution, which took me very long. But after a stroll around the forest, I cam
+bacl, debugged my algorithm and finished it up, finally..!
+
+day 14
+Doing some stuff with bitmasks. Easy day, after struggle sunday. First I had both
+parts splitted. But I decided to refactor it to one loop. That resulted in a bigger
+mess, but I don't feel like reverting it anymore..
