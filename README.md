@@ -169,6 +169,16 @@ solution, which took me very long. But after a stroll around the forest, I cam
 bacl, debugged my algorithm and finished it up, finally..!
 
 ## [--- Day 14: Docking Data ---](https://adventofcode.com/2020/day/14)
-Doing some stuff with bitmasks. Easy day, after struggle sunday. First I had both
+Doing some stuff with bitmasks. Easy day, after struggle sunday. I didn't even do 
+anything with "real" bitmasks, which would be quite nice with OR/AND. First I had both
 parts splitted. But I decided to refactor it to one loop. That resulted in a bigger
 mess, but I don't feel like reverting it anymore..
+
+## [--- Day 15: Rambunctious Recitation ---](https://adventofcode.com/2020/day/14)
+The elves play a memory game and try to remember if a number is already spoken.
+The last to times the number occured are subtracted and is the new number.
+I just placed the last 2 occurences in a dictionary and let the script do the 
+work. For part 1 it was easy and I didn't thought it would work for part 2 (which)
+involved a lot more looping and memory usage, but it turned out to work.
+No smart solution, but in two minutes it was done.. Slow, but now I can get to work.
+Let's see what the others come up with.
