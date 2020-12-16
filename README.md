@@ -174,7 +174,7 @@ anything with "real" bitmasks, which would be quite nice with OR/AND. First I ha
 parts splitted. But I decided to refactor it to one loop. That resulted in a bigger
 mess, but I don't feel like reverting it anymore..
 
-## [--- Day 15: Rambunctious Recitation ---](https://adventofcode.com/2020/day/14)
+## [--- Day 15: Rambunctious Recitation ---](https://adventofcode.com/2020/day/15)
 The elves play a memory game and try to remember if a number is already spoken.
 The last to times the number occured are subtracted and is the new number.
 I just placed the last 2 occurences in a dictionary and let the script do the 
@@ -182,3 +182,7 @@ work. For part 1 it was easy and I didn't thought it would work for part 2 (whic
 involved a lot more looping and memory usage, but it turned out to work.
 No smart solution, but in two minutes it was done.. Slow, but now I can get to work.
 Let's see what the others come up with.
+
+## [--- Day 16: Ticket Translation ---](https://adventofcode.com/2020/day/16)
+Find out which rules apply to which column by deducing from valid examples.
+Messy long solution, but runs in 15ms, so fine and no time for refactoring!
