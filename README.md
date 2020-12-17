@@ -186,3 +186,12 @@ Let's see what the others come up with.
 ## [--- Day 16: Ticket Translation ---](https://adventofcode.com/2020/day/16)
 Find out which rules apply to which column by deducing from valid examples.
 Messy long solution, but runs in 15ms, so fine and no time for refactoring!
+
+## [--- Day 17: Conway Cubes ---](https://adventofcode.com/2020/day/17)
+Again some kind of Game of Life simulation, only with 3 dimensions for the first
+part and four dimensions for the second part. Also the size of every dimension 
+can grow by the rules, so you need to manage that. I like a dictionary in Python
+for these kind of tasks, sometimes a defaultdict is preferred, but for this one
+I can manage the bounds more easily with a normal dict. Again happy to take the 
+stars today with very little sleep. Hopefully I can manage to keep it up till
+the 25th. 
