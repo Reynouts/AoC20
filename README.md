@@ -195,3 +195,17 @@ for these kind of tasks, sometimes a defaultdict is preferred, but for this one
 I can manage the bounds more easily with a normal dict. Again happy to take the 
 stars today with very little sleep. Hopefully I can manage to keep it up till
 the 25th. 
+
+## [--- Day 18: Operation Order ---](https://adventofcode.com/2020/day/18)
+For part 1 a couple of equations needed to be solved with multiplications,
+summations and brackets. But not the "normal" rules of precedence apply.
+So I just parsed it myself and also accounted for numbers bigger than 9,
+turned out I didn't need that and I overcomplicated the flow because of
+that, which put me off for the next part. In this second part the precedence
+of the operators is swapped (so add evaluates first instead of multiply).
+First I tried to add brackets, but somehow it didn't work with my code of
+part 1. Time to try something different: it  would be a very easy assignment 
+if we could change this precedence somehow and throw in in Python's "eval".
+So I made a dummy class for integers and abused the build in dunder methods
+and did some find and replace in the gives equations and voila! Easy and 
+simple. Also changed part 1 to this method. Magic!
