@@ -209,3 +209,30 @@ if we could change this precedence somehow and throw in in Python's "eval".
 So I made a dummy class for integers and abused the build in dunder methods
 and did some find and replace in the gives equations and voila! Easy and 
 simple. Also changed part 1 to this method. Magic!
+
+## [--- Day 19: Monster Messages ---](https://adventofcode.com/2020/day/19)
+Wow first first gold star of our private leaderboard this year, didn't thought 
+that would happen with ahans and willi :wink: Probably all sleeping in the weekend, 
+but a first is a first.
+Not very pythonic code, a bit long for my taste, but it works and I'm happy enough 
+to solve it without optimzing or refactoring. Runs in 3 seconds.
+Created a regex on the go. For part 2 I tried to come up with one regex, but you have 
+some dependancy between two groups (that need to be the same amount of occurences) and 
+couldn't figure out how to do that with a single regex, so just made a loop which 
+replaces those group quantifiers with a counter.
+Turns out to be a quite nice and straightforward solution compared to other solutions.
+
+## [--- Day 20: Jurassic Jigsaw ---](https://adventofcode.com/2020/day/20)
+Last sunday of AoC. In most cases the weekend puzzles are bigger and this one
+is really big and confusing.
+Unfortunately I got sick saterdayevening and I couldn't make it to my laptop
+for this puzzle, but read about the tricky puzzle and the time some guys spend
+on this one.. I have to catch up with this day later this week.
+
+## [--- Day 21: Allergen Assessment ---](https://adventofcode.com/2020/day/21)
+After reading the puzzle on my phone, I decided this was an easy puzzle to do.
+It was kinda similar to day 16, but even more easy. Maybe I need to do some
+thinking on Day 20 already, because I want to finish it before christmas.
+I'm already feeling better, so hopefully I'm back alive tomorrow.
+
+
