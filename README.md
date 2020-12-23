@@ -235,4 +235,24 @@ It was kinda similar to day 16, but even more easy. Maybe I need to do some
 thinking on Day 20 already, because I want to finish it before christmas.
 I'm already feeling better, so hopefully I'm back alive tomorrow.
 
+## [--- Day 22: Crab Combat ---](https://adventofcode.com/2020/day/22)
+Implement the game of war (or "hoger/lager"?) and make it kind of recurse
+in the second part. No weird things this day, only there were some
+requirements which did not appear in all outputs, which made it easier for
+some people to get it right the first time and quicker to run.
+
+## [--- Day 23: Crab Cups ---](https://adventofcode.com/2020/day/23)
+Again some crab game. No with a big cyclic list where you needed to remove 
+sublists and adding them again somewhere else. The trick here was to think
+of a datastructure or something to keep this manageable and fast to run for
+10 million iterations. So you could use some kind of linklist (or integer 
+array) or just a dict.
+
+Best thing of today: I found time to solve day 20! Found 19 seamonsters with
+my monstercode. Happy to finish that one! Took a long time to found a bug in 
+my assemblage of the puzzle. Didn't flip the righttop piece. After I figured
+that out when I was not even behind my computer, it worked. Yeah!
+
+
+
 
