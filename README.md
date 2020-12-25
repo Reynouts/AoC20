@@ -165,8 +165,8 @@ mondriaan inspired visual!
 ## [--- Day 13: Shuttle Search ---](https://adventofcode.com/2020/day/13)
 Toughest day so far. Didn't manage to bring enough math theory to solve this in 
 one go (something with CRT; Chinese Remainder Theorem). So I had to make my own
-solution, which took me very long. But after a stroll around the forest, I cam
-bacl, debugged my algorithm and finished it up, finally..!
+solution, which took me very long. But after a stroll around the forest, I came
+back, debugged my algorithm and finished it up, finally..!
 
 ## [--- Day 14: Docking Data ---](https://adventofcode.com/2020/day/14)
 Doing some stuff with bitmasks. Easy day, after struggle sunday. I didn't even do 
@@ -253,6 +253,27 @@ my monstercode. Happy to finish that one! Took a long time to found a bug in
 my assemblage of the puzzle. Didn't flip the righttop piece. After I figured
 that out when I was not even behind my computer, it worked. Yeah!
 
+## [--- Day 24: Lobby Layout ---](https://adventofcode.com/2020/day/24)
+Third Game of Life simulation! We learn from the past times, and this time
+I'm just keeping a set coordinates of elements which are "on", loop over 
+them and check their possible neighbours too. No need to keep a real grid
+of elements. Fast!
 
+## [--- Day 25: Combo Breaker ---](https://adventofcode.com/2020/day/25)
+Last day. An easy occlusion, just doing some operations to the input numbers
+and voila! You finally reached your holiday location.
 
+## --- SUMMARY ---
+I really liked the overall difficulty of the puzzle of this year.
+In my opinion there weren't the really difficult puzzles like last
+year, which were near to impossible to finish in a reasonable time.
+Only two days that were hard were day 13 and day 20. But not because
+you couldn't solve it without weird math tricks, but because you had
+to figure a lot out and debugging was hard for these assignments.
 
+There weren't real dependancies between puzzles, which I think isn't
+a disadvantage for these kind of challenges. Last year with the intComputer
+some people got discouraged in later days and quit because of their
+messy implementation.
+
+A great edition of AoC!
